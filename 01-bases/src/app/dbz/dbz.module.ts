@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { MainPageComponent } from '../dbz/main-page/main-page.component';
+import { PersonajesComponent } from './personajes/personajes.component';
+import { AgregarComponent } from './agregar/agregar.component';
 
 
 
 
 @NgModule({
   declarations: [
-    MainPageComponent
+    MainPageComponent,
+    PersonajesComponent,
+    AgregarComponent
   ],
   exports:[
   MainPageComponent
