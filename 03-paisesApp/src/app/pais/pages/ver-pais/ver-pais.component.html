@@ -23,8 +23,23 @@
                 <li class="list-group-item">
                     <strong>Población</strong> {{ pais[0].population | number }}
                 </li>
+                <li class="list-group-item">
+                    <strong>Código númerico</strong> {{ pais[0].ccn3 }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Código alpha3</strong> {{ pais[0].cca3 }}
+                </li>
             </ul>
         </div>
 
     </div>
+
+    <h3>Traducciones</h3>
+    <div class="row">
+        <div class="col">
+            <!-- <span class="badge bg-primary mr-1">{{ pais[0].translations.ja}}</span> -->
+            <span *ngFor="let badge of badges" class="badge bg-primary mr-1">{{badge}}</span>
+        </div>
+    </div>
+
 </ng-template>
